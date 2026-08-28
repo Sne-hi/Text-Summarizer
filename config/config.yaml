@@ -5,3 +5,10 @@ data_ingestion:
   source_URL: https://github.com/Sne-hi/datasets/raw/refs/heads/main/samsum%20dataset.zip
   local_data_file: artifacts/data_ingestion/samsum dataset.zip
   unzip_dir: artifacts/data_ingestion/unzip
+
+
+
+data_validation:
+  root_dir: artifacts/data_validation
+  STATUS_FILE: artifacts/data_validation/status.txt
+  ALL_REQUIRED_FILES: [ "samsum-train.csv", "samsum-test.csv", "samsum-validation.csv" ]
